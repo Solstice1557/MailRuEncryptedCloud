@@ -1,0 +1,3 @@
+[submodule "MailRuCloudClientDotNETCore"]
+	path = MailRuCloudClientDotNETCore
+	url = git@github.com:Solstice1557/MailRuCloudClientDotNETCore.git
