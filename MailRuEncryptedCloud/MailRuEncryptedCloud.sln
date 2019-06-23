@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailRuEncryptedCloud", "MailRuEncryptedCloud\MailRuEncryptedCloud.csproj", "{B84FD812-879D-48A7-849C-F7563BD1F21D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailRuEncryptedCloud", "MailRuEncryptedCloud\MailRuEncryptedCloud.csproj", "{B84FD812-879D-48A7-849C-F7563BD1F21D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailRuEncryptedCloud.ConsoleSync", "MailRuEncryptedCloud.ConsoleSync\MailRuEncryptedCloud.ConsoleSync.csproj", "{278AF85D-1C46-40DA-B57A-8E83D8215849}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailRuEncryptedCloud.ConsoleSync", "MailRuEncryptedCloud.ConsoleSync\MailRuEncryptedCloud.ConsoleSync.csproj", "{278AF85D-1C46-40DA-B57A-8E83D8215849}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MailRuCloudClientDotNETCore", "MailRuCloudClientDotNETCore", "{07C8E81C-130A-4642-A1A1-8EA9F166E08A}"
 EndProject
@@ -19,6 +19,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailRuCloudClient", "..\MailRuCloudClientDotNETCore\src\MailRuCloudClient.csproj", "{E39CCAC7-31F3-4B79-8CE9-3F774194FEE2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailRuCloudClient.Tests", "..\MailRuCloudClientDotNETCore\tests\MailRuCloudClient.Tests.csproj", "{69AC67D2-D1FA-4A01-923A-EAA8299BE88E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailRuEncryptedCloud.Tests", "MailRuEncryptedCloud.Tests\MailRuEncryptedCloud.Tests.csproj", "{A82B8BE3-1541-4E12-8968-C61D56EA0623}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +44,10 @@ Global
 		{69AC67D2-D1FA-4A01-923A-EAA8299BE88E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69AC67D2-D1FA-4A01-923A-EAA8299BE88E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69AC67D2-D1FA-4A01-923A-EAA8299BE88E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A82B8BE3-1541-4E12-8968-C61D56EA0623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A82B8BE3-1541-4E12-8968-C61D56EA0623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A82B8BE3-1541-4E12-8968-C61D56EA0623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A82B8BE3-1541-4E12-8968-C61D56EA0623}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
