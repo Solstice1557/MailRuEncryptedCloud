@@ -1,5 +1,6 @@
 ﻿namespace MailRuEncryptedCloud.Encryption
 {
+    using System;
     using System.IO;
     using System.Linq;
     using System.Security.Cryptography;
@@ -64,6 +65,8 @@
             var bytes = GetRandomBytes(keyBytesLength + 16);
             return (bytes.Take(keyBytesLength).ToArray(), bytes.Skip(keyBytesLength).ToArray());
         }
+
+        public string GenerateRandomString() => Convert.ToBase64String(GetRandomBytes(32));
 
         private static byte[] GetRandomBytes(int length)
         {

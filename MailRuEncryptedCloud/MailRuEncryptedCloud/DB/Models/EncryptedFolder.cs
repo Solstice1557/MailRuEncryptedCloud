@@ -11,6 +11,8 @@
 
         public int? ParentId { get; set; }
 
+        public int? RootId { get; set; }
+
         [StringLength(50)]
         public string EncryptedName { get; set; }
 
@@ -19,10 +21,18 @@
 
         public DateTime Created { get; set; }
 
-        public EncryptedFolder Parent { get; set; }
+        public DateTime Modified { get; set; }
 
-        public ICollection<EncryptedFolder> Folders { get; set; }
+        public virtual EncryptedFolder Parent { get; set; }
 
-        public ICollection<EncryptedFile> Files { get; set; }
+        public virtual EncryptedFolder Root { get; set; }
+
+        public virtual ICollection<EncryptedFolder> Folders { get; set; }
+
+        public virtual ICollection<EncryptedFolder> AllFolders { get; set; }
+
+        public virtual ICollection<EncryptedFile> Files { get; set; }
+
+        public virtual ICollection<DeviceRootFolder> DeviceRootFolders { get; set; }
     }
 }

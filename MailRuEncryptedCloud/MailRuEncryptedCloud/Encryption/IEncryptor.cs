@@ -7,5 +7,7 @@
         byte[] Decrypt(byte[] data, byte[] key, byte[] vector);
 
         (byte[] key, byte[] vector) GenerateRandomKeys();
+
+        string GenerateRandomString();
     }
 }

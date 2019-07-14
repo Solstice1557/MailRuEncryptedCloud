@@ -22,10 +22,16 @@
         [MaxLength(256)]
         public byte[] Hash { get; set; }
 
+        public byte[] EncryptionKey { get; set; }
+
+        public byte[] EncryptionVector { get; set; }
+
+        public long UnencryptedSize { get; set; }
+
         public DateTime Modified { get; set; }
 
         public DateTime Created { get; set; }
 
-        public EncryptedFolder Folder { get; set; }
+        public virtual EncryptedFolder Folder { get; set; }
     }
 }
